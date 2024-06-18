@@ -713,6 +713,7 @@ GameObject:
   - component: {fileID: 1399438730}
   - component: {fileID: 1399438731}
   - component: {fileID: 1399438732}
+  - component: {fileID: 1399438733}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -857,6 +858,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780629fd628489045aff00f5f9657993, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1399438733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399438726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3bebfe9511a627428477da879afd86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1403287265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -908,18 +921,6 @@ PrefabInstance:
     - target: {fileID: 5436741564957258347, guid: 6c7f06c6a702d4d41bba4b5576adc82c, type: 3}
       propertyPath: m_Name
       value: mini simple demo_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 8679757490863890365, guid: 6c7f06c6a702d4d41bba4b5576adc82c, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: 389ca3d9c9d4e4f43b89f75ba8cb2335, type: 3}
-    - target: {fileID: 8679757490863890365, guid: 6c7f06c6a702d4d41bba4b5576adc82c, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 69ce5dd747afb75488c00ed0f554f1d6, type: 2}
-    - target: {fileID: 8679757490863890365, guid: 6c7f06c6a702d4d41bba4b5576adc82c, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

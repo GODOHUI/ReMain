@@ -7,10 +7,7 @@ public class TopDownAnimationController : AnimationController
     private static readonly int IsWalk = Animator.StringToHash("IsWalk");
   
 
-    private readonly float magnituteThreshold = 0.5f;
-
-
-    private void Awake()
+    public void Awake()
     {
         base.Awake();
     }
@@ -20,9 +17,9 @@ public class TopDownAnimationController : AnimationController
     {
         controller.OnMoveEvent += Move;
     }
-    private void Move(Vector3 obj)
+    private void Move(Vector2 obj)
     {
-        animator.SetBool(IsWalk, obj.magnitude > magnituteThreshold);
+        animator.SetBool(IsWalk, obj.magnitude > 0f);
     }
 
     // Update is called once per frame

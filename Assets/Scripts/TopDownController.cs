@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class TopDownController : MonoBehaviour
 {
-    public event Action<Vector3> OnMoveEvent;
+    public event Action<Vector2> OnMoveEvent;
 
-    public void CallMoveEvent(Vector3 direction)
+    public void CallMoveEvent(Vector2 direction)
     {
-        // onMoveEvent는 public이어서 TopDownMovement에서 메소드들을 등록해놨음(a.k.a. 구독)
+     
         OnMoveEvent?.Invoke(direction);
     }
     // Start is called before the first frame update
